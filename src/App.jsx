@@ -7,6 +7,7 @@ function App() {
   const { moon } = useContext(Context)
 
   const body = document.querySelector('body')
+  
   if(moon === 'white') {
     body.classList.add('theme-white')
     body.classList.remove('theme-black')

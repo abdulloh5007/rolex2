@@ -19,12 +19,21 @@
 }
 
 .theme-white {
-    background-color: white;
+    background-color: hsl(0, 0%, 99%);
     transition: .5s;
 }
 .theme-black {
     background-color: hsl(0, 0%, 12%);
     transition: .5s;
+    .scrollTop {
+        button {
+            background-color: hsl(0, 0%, 22%);
+            color: #ffb566 !important;
+            i {
+                color: #ffb566 !important;
+            }
+        }
+    }
     .header-scroll {
         transition: .5s;
         background-color: hsl(0, 0%, 12%);
