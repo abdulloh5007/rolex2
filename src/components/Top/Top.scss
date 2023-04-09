@@ -1,0 +1,16 @@
+.scrollTop {
+    position: relative;
+    button {
+        position: fixed;
+        z-index: 1;
+        border: none;
+        padding: 10px;
+        color: #ffb566;
+        background-color: hsl(0, 0, 96%);
+        font-size: 20px;
+        font-weight: 600;
+        right: 3%;
+        bottom: -3%;
+        transition: .4s;
+    }
+}

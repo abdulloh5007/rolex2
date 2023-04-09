@@ -1,0 +1,50 @@
+.my_container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+:root {
+    // Font size
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    
+    // Font weight
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+.theme-white {
+    background-color: white;
+    transition: .5s;
+}
+.theme-black {
+    background-color: hsl(0, 0%, 12%);
+    transition: .5s;
+    .header-scroll {
+        transition: .5s;
+        background-color: hsl(0, 0%, 12%);
+    }
+    .cards {
+        div {
+            background-color: hsl(0, 0%, 16%) !important;
+            border-color: hsl(0, 0%, 20%) !important;
+            button {
+                background-color: hsl(0, 0%, 24%) !important;
+                &:hover {
+                    background-color: hsl(0, 0%, 34%) !important;
+                }
+            }
+            &:hover {
+                box-shadow: 1px 1px 30px 2px hsl(0, 0%, 26%) !important;
+            }
+        }
+    }
+    a, i, button, h1, h2, h3, h4, h5, p, b {
+        color: white !important;
+    }
+}

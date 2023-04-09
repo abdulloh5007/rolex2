@@ -1,0 +1,153 @@
+.feature {
+    &-top {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+            font-size: var(--biggest-font-size);
+            font-weight: 400;
+            position: relative;
+            width: 160px;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 2px;
+                left: 23%;
+                top: -30%;
+                background-color: #ffb566;
+            }
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            width: 100%;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 300px;
+                height: 360px;
+                background-color: hsl(0, 1%, 99%);
+                border: 1px solid hsl(0, 0%, 94%);
+                overflow-y: hidden;
+                transition: .4s;
+                position: relative;
+                img {
+                    height: 214px;
+                }
+                b {
+                    font-size: var(--normal-font-size);
+                    margin-top: 8px;
+                }
+                span {
+                    color: #ffb566;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 8px;
+                }
+                button {
+                    margin-top: -10px;
+                    opacity: 0;
+                    transition: .4s;
+                    padding: 10px 20px;
+                    background-color: hsl(0, 0%, 16%);
+                    color: white;
+                    border: none;
+                    &:hover {
+                        background-color: hsl(0, 0%, 36%);
+                    }
+                    &:active {
+                        transform: scale(.96);
+                    }
+                }
+                &:hover {
+                    height: 400px;
+                    transition: .4s;
+                    box-shadow: 1px 1px 30px 2px hsl(0, 0%, 86%);
+                    button {
+                        margin-top: 20px;
+                        transition: .4s;
+                        opacity: 1;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    width: 60px;
+                    height: 30px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    justify-content: center;
+                    background-color: #ffb566;
+                    content: "SALE";
+                    left: -5%;
+                    top: 12%;
+                    transform: rotateZ(270deg);
+                    letter-spacing: 1.3px;
+                }
+            }
+        }
+    }
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 200px;
+        .left {
+            height: 450px;
+            width: 450px;
+            background-color: #ffb566;
+            img {
+                width: 450px;
+                transform: translateY(-80px) translateX(80px);
+            }
+        }
+        .right {
+            width: 450px;
+            h2 {
+                font-size: var(--h1-font-size);
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    width: 14%;
+                    height: 2px;
+                    background-color: #ffb566;
+                    top: -50%;
+                    left: 0;
+                }
+            }
+            h3 {
+                font-size: var(--biggest-font-size);
+                margin-top: 40px;
+                max-width: 340px;
+                width: 100%;
+            }
+            p {
+                margin-top: 20px;
+                max-width: 350px;
+                width: 100%;
+            }
+            button {
+                transition: .4s;
+                padding: 10px 20px;
+                background-color: hsl(0, 0%, 16%);
+                color: white;
+                border: none;
+                &:hover {
+                    background-color: hsl(0, 0%, 36%);
+                }
+                &:active {
+                    transform: scale(.96);
+                }
+            }
+        }
+    }
+}

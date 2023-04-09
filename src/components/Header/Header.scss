@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: .6s ease;
+    &-scroll {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        transition: .6s ease;
+        position: sticky;
+        max-width: 1100px;
+        width: 100%;
+        top: 0px;
+        height: 80px;
+        background-color: white;
+        z-index: 1;
+        .layout{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            &-left {
+                display: flex;
+                align-items: center;
+                a {
+                    font-size: var(--h1-font-size);
+                    color: black;
+                    text-decoration: none;
+                }
+                .links {
+                    display: flex;
+                    margin-left: 40px;
+                    a {
+                        font-size: var(--h2-font-size);
+                        margin-left: 30px;
+                        text-decoration: none;
+                        color: black;
+                        transition: .3s ease;
+                    }
+                    .active {
+                        color: #ffb566;
+                    }
+                }
+            }
+            &-right{
+                margin-right: 10px;
+                button {
+                    border: none;
+                    background-color: transparent;
+                    padding: 5px;
+                    font-size: var(--h2-font-size);
+                }
+                .my-btn {
+                    background-color: #ffb566;
+                }
+            }
+        }
+    }
+    .layout{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        &-left {
+            display: flex;
+            align-items: center;
+            a {
+                font-size: var(--h1-font-size);
+                color: black;
+                text-decoration: none;
+            }
+            .links {
+                display: flex;
+                margin-left: 40px;
+                a {
+                    font-size: var(--h2-font-size);
+                    margin-left: 30px;
+                    text-decoration: none;
+                    color: black;
+                    transition: .3s ease;
+                }
+                .active {
+                    color: #ffb566;
+                }
+            }
+        }
+        &-right{
+            margin-right: 10px;
+            button {
+                border: none;
+                background-color: transparent;
+                padding: 5px;
+                font-size: var(--h2-font-size);
+            }
+            .my-btn {
+                background-color: #ffb566;
+            }
+        }
+    }
+}
