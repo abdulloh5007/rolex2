@@ -2,6 +2,8 @@ import React from 'react'
 import './Home.scss'
 import homeImg from "../../assets/images/home.png" 
 
+const data = []
+
 function Home() {
   return (
     <div className='home'>
@@ -11,7 +13,18 @@ function Home() {
         <span>$1245</span>
         <div className='buttons'>
           <button>Discover</button>
-          <button>ADD TO CART</button>
+          <button onClick={() => {
+            const getDate = new Date().getDate()
+            const today = new Date();
+            const options = { weekday: 'long' };
+            const dayOfWeek = today.toLocaleString('ger', options);
+            
+            const getHours = new Date().getHours()
+            if(!data.includes(getDate, dayOfWeek, getHours)) {
+              data.push(getDate, dayOfWeek, getHours)
+            }
+            console.log(data);
+          }}>ADD TO CART</button>
         </div>
       </div>
       <div className="home-right">

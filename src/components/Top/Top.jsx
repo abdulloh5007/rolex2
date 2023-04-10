@@ -13,7 +13,7 @@ function Top() {
     }
 
     const [scrol, setScrol] = useState(false)
-    const offSet = 2;
+    const offSet = 4;
 
     const transformBtn = {
         transform: scrol === true ? 'translateY(-80px)' : 'translateY(80px)',
