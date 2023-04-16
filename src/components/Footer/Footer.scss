@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .div {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+            font-size: var(--biggest-font-size);
+            font-weight: 400;
+            position: relative;
+        }
+    }
+    .social {
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 5px;
+            &:first-child {
+                color: #1773EA;
+            }
+            &:nth-child(3) {
+                color: #1C96E8;
+            }
+            &:last-child {
+                color: #F7016E;
+            }
+        }
+    }
+    .message {
+        button {
+            background-color: #1772EA;
+            padding: 8px 10px;
+            border: none;
+            color: white;
+            margin: 10px 2px;
+            font-size: 18px;
+            width: 150px;
+            transition: .4s;
+            i {
+                display: none;
+                opacity: 0;
+                transition: .4s;
+            }
+            &:hover {
+                width: 160px;
+                i {
+                    opacity: 1;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

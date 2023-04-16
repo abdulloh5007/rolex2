@@ -17,7 +17,7 @@ function Home() {
             const getDate = new Date().getDate()
             const today = new Date();
             const options = { weekday: 'long' };
-            const dayOfWeek = today.toLocaleString('ger', options);
+            const dayOfWeek = today.toLocaleString('ru', options);
             
             const getHours = new Date().getHours()
             if(!data.includes(getDate, dayOfWeek, getHours)) {

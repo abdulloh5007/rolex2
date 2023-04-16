@@ -5,16 +5,18 @@ import Products from '../Products/Products'
 import New from '../New/New'
 import Home from '../Home/Home'
 import Top from '../Top/Top'
+import Footer from '../Footer/Footer'
 
 function Imports() {
   return (
     <div>
-        <Header/>
-        <Home/>
-        <Featured/>
-        <Products/>
-        <New/>
-        <Top/>
+      <Header />
+      <Home />
+      <Featured />
+      <Products />
+      <New />
+      <Top />
+      <Footer />
     </div>
   )
 }

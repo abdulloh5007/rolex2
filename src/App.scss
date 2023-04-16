@@ -25,6 +25,113 @@
 .theme-black {
     background-color: hsl(0, 0%, 12%);
     transition: .5s;
+    .new-bottom {
+        .cards {
+            div {
+                img {
+                    height: 215px;
+                    margin-top: 38px;
+                }
+                b {
+                    font-size: var(--normal-font-size);
+                    margin-top: 8px;
+                }
+                span {
+                    color: #ffb566;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 8px;
+                }
+                button {
+                    margin-top: -10px;
+                    opacity: 0;
+                    transition: .4s;
+                    padding: 10px 20px;
+                    background-color: hsl(0, 0%, 16%);
+                    color: white;
+                    border: none;
+                    &:hover {
+                        background-color: hsl(0, 0%, 36%);
+                    }
+                    &:active {
+                        transform: scale(.96);
+                    }
+                }
+                &:hover {
+                    height: 440px;
+                    transition: .4s;
+                    background-color: #ffb566 !important;
+                    b {
+                        color: black !important;
+                    }
+                    span {
+                        color: black;
+                    }
+                    button {
+                        margin-top: 20px;
+                        transition: .4s;
+                        opacity: 1;
+                    }
+                    &:after {
+                        position: absolute;
+                        width: 60px;
+                        height: 30px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        color: #fff;
+                        justify-content: center;
+                        background-color: hsl(0, 0%, 16%);
+                        content: "NEW";
+                        right: 5%;
+                        top: 5%;
+                        letter-spacing: 1.3px;
+                        cursor: pointer;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    width: 60px;
+                    height: 30px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    justify-content: center;
+                    background-color: #ffb566;
+                    content: "NEW";
+                    right: 5%;
+                    top: 5%;
+                    letter-spacing: 1.3px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .social {
+        a {
+            &:nth-child(2) {
+                color: #1773EA !important;
+                i {
+                    color: #1773EA !important;
+                }
+            }
+            &:nth-child(3) {
+                color: #1C96E8 !important;
+                i {
+                    color: #1C96E8 !important;
+                }
+            }
+            &:last-child {
+                color: #F7016E !important;
+                i {
+                    color: #F7016E !important;
+                }
+            }
+        }
+    }
     .scrollTop {
         button {
             background-color: hsl(0, 0%, 22%);

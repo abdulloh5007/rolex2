@@ -31,7 +31,7 @@ function Products() {
       <div className="top">
         <h2>PRODUCTS</h2>
       </div>
-      <div className="cards">
+      <div className="cards" data-aos='fade-up' data-aos-duration="3000">
         <div>
           <img src={product1} alt="product1" />
           <b>SPIRIT ROSE</b>
@@ -64,7 +64,7 @@ function Products() {
         </div>
       </div>
       <div className="comments">
-        <div className="slider">
+        <div className="slider" data-aos='fade-down-right' data-aos-duration="4000">
           <Swiper
             pagination={pagination}
             navigation={true}
@@ -115,7 +115,7 @@ function Products() {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="right">
+        <div className="right" data-aos="zoom-in">
           <div>
             <img src={testimonial} alt="testimonial" />
           </div>
